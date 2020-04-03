@@ -1,0 +1,23 @@
+{
+  "name": "mysnap",
+  "version": "0.0.1",
+  "description": "mqtt preprocessing app",
+  "main": "mysnap.js",
+  "scripts": {
+    "lint": "standard --fix --verbose | snazzy",
+    "test": "npm run lint && ava test/*"
+  },
+  "bin": {
+    "mysnap": "mysnap.js"
+  },
+  "keywords": [
+    "preprocessing",
+    "mqtt"
+  ],
+  "author": "gmantoha <gmantoha>",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "mqtt": "^3.0.0"
+  },
+  "devDependencies": {}
+}

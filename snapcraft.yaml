@@ -1,0 +1,19 @@
+name: mysnap-mqtt
+version: git
+summary: MQTT Roundtrip Snap.
+description: |
+  just a roundtrip snap
+
+confinement: strict
+base: core18
+
+parts:
+  mysnap:
+    plugin: nodejs
+    source: .
+
+apps:
+  mysnap:
+    daemon: simple
+    command: mysnap
+    plugs: [network]
